@@ -17,9 +17,9 @@ or the class VM.
 
 After downloading, cd into the main source directly, then:
 
-% mkdir build
-% cd build
-% cmake ../
+% mkdir build  
+% cd build  
+% cmake ../  
 
 Special instructions for MacOSX platforms:
 
