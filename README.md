@@ -21,6 +21,13 @@ After downloading, cd into the main source directly, then:
 % cd build  
 % cmake ../  
 
+When building on Cori, make sure you are on a KNL node when doing the compilation. The
+Cori login nodes are *not* KNL nodes, the Cori login nodes have Intel Xeon E5-2698
+processors, not the Intel Xeon Phi 7250 processors.  The simplest way to do this is
+grab an interactive KNL node:
+salloc --nodes 1 --qos interactive --time 01:00:00 --constraint knl --account m3930
+
+
 Special instructions for MacOSX platforms:
 
 On Prof. Bethel's laptop, which is an intel-based Macbook Pro running Big Sur, and
